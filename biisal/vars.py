@@ -40,7 +40,7 @@ class Var(object):
     if HAS_SSL:
         URL = "https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/".format(FQDN)
     else:
-        URL = "bots.hostingup.icu:9005/namaste".format(FQDN)
+        URL = "https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://primebaby11220:TuGa0I5ZsiC8mp5A@cluster0.df4rivj.mongodb.net/?retryWrites=true&w=majorit'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'MovieEntertainment4u')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
