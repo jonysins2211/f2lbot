@@ -33,14 +33,14 @@ class Var(object):
     
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', 'https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/') else APP_NAME+'.herokuapp.com'
+    FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', 'https://www.movieloverzz.my.id/') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     HAS_SSL = False
-    FQDN = 'https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/'#(Here, enter the domain and hosting port you received from HostingUp. If you're using your own, enter that, but make sure to use the domain name, not the IP address, and include the port as well.)
+    FQDN = 'https://www.movieloverzz.my.id/'#(Here, enter the domain and hosting port you received from HostingUp. If you're using your own, enter that, but make sure to use the domain name, not the IP address, and include the port as well.)
     if HAS_SSL:
-        URL = "https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/".format(FQDN)
+        URL = "https://www.movieloverzz.my.id/".format(FQDN)
     else:
-        URL = "https://loki-8-nov-2024-bot-v1-4cbc6b12c796.herokuapp.com/".format(FQDN)
+        URL = "https://www.movieloverzz.my.id/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://primebaby11220:TuGa0I5ZsiC8mp5A@cluster0.df4rivj.mongodb.net/?retryWrites=true&w=majorit'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'MovieEntertainment4u')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
