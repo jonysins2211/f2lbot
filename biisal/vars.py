@@ -20,7 +20,7 @@ class Var(object):
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002005906539'))
     NEW_USER_LOG = int(getenv('NEW_USER_LOG', '-1002005906539'))
-    PORT = int(getenv('PORT', '9005')) #(Here, enter the hosting port you received from HostingUp, which should start From 9000)
+    PORT = int(getenv('PORT', '9055')) #(Here, enter the hosting port you received from HostingUp, which should start From 9000)
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0')) #(DO NOT CHANGE IF U DEPLOY YOUR BOT ON HOSTINGUP VPS)
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "949657126").split()]
