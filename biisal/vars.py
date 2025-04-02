@@ -36,9 +36,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', 'BIND_ADRESS:PORT')) if not ON_HEROKU or getenv('FQDN', 'https://loki717161-ba13c909c631.herokuapp.com/') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     HAS_SSL = False
-    FQDN = 'https://loki717161-ba13c909c631.herokuapp.com/'#(Here, enter the domain and hosting port you received from HostingUp. If you're using your own, enter that, but make sure to use the domain name, not the IP address, and include the port as well.)
+    FQDN = 'https://movie-loverzz2-1c5653e626a6.herokuapp.com/'#(Here, enter the domain and hosting port you received from HostingUp. If you're using your own, enter that, but make sure to use the domain name, not the IP address, and include the port as well.)
     if HAS_SSL:
-        URL = "https://loki717161-ba13c909c631.herokuapp.com/".format(FQDN)
+        URL = "https://movie-loverzz2-1c5653e626a6.herokuapp.com/".format(FQDN)
     else:
         URL = "https://loki717161-ba13c909c631.herokuapp.com/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://primebaby11220:TuGa0I5ZsiC8mp5A@cluster0.df4rivj.mongodb.net/?retryWrites=true&w=majorit'))
