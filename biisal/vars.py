@@ -40,7 +40,7 @@ class Var(object):
     if HAS_SSL:
         URL = "https://thoughtful-shayne-mlfiles-5730e5e6.koyeb.app/".format(FQDN)
     else:
-        URL = "https://movie-loverzz2-1c5653e626a6.herokuapp.com/".format(FQDN)
+        URL = "https://thoughtful-shayne-mlfiles-5730e5e6.koyeb.app/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://tgarun163:qgq7VlZ1a4Ke9Dnh@cluster0.7iaqu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'TelexOriginals')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
